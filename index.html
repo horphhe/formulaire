@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Formulaire : Les logiciels libres</h1>
+
+    <p class="subtitle">Partagez votre avis et votre utilisation des logiciels et outils libres ! Ces informations seront utilisées anonymement et uniquement dans le cadre d'projet de diplôme en design graphique sur les communs numériques.
+    </p>
+
+    <p class="subtitle">Le logiciel libre constitue une alternative concrète aux outils dits « propriétaires », comme ceux de Google, Microsoft ou Adobe. Le mouvement du libre défend le développement de logiciels respectueux de la neutralité du Net, sans secret industriel, et dont le code source est librement accessible, modifiable et partageable.
+    </p>
+
+    <form id="questionnaire-form" 
+          action="https://formspree.io/f/mnjbeonq" 
+          method="POST">
+
+    <h2>Identité</h2>
+
+      <div class="form-group">
+        <label>Âge</label>
+  <input type="text" name="age" required>
+      </div>
+
+      <div class="form-group">
+        <p>Situation</p>
+        <label><input type="radio" name="situation" value="Étudiant·e" required>
+          Étudiant·e</label>
+        <label><input type="radio" name="situation" value="Salarié·e">
+          Salarié·e</label>
+        <label><input type="radio" name="situation" value="Indépendant·e">
+          Indépendant·e</label>
+        <label><input type="radio" name="situation" value="En recherche d’emploi">
+          En recherche d’emploi</label>
+        <label><input type="radio" name="situation" value="Autre">
+          Autre</label>
+      </div>
+
+
+      <div class="form-group">
+        <p>Niveau d’aisance avec le numérique :</p>
+        <label><input type="radio" name="aisance_numerique" value="Très à l'aise" required>
+          Très à l'aise</label>
+        <label><input type="radio" name="aisance_numerique" value="Plutôt à l’aise">
+          Plutôt à l’aise</label>
+        <label><input type="radio" name="aisance_numerique" value="Moyen">
+          Moyen</label>
+        <label><input type="radio" name="aisance_numerique" value="Peu à l’aise">
+          Peu à l’aise</label>
+      </div>
+
+
+      <h2>Usages</h2>
+      
+      <div class="form-group">
+        <label>Quels logiciels utilisez-vous régulièrement ?</label>
+  <input type="text" name="logiciels_utilises">
+      </div>
+      
+
+      <div class="form-group">
+        <p>Vous utilisez majoritairement des logiciels :</p>
+        <label><input type="radio" name="type_logiciels" value="Propriétaires" required>
+          Propriétaires</label>
+        <label><input type="radio" name="type_logiciels" value="Libres ou open source">
+          Libres</label>
+        <label><input type="radio" name="type_logiciels" value="Mixte">
+          Mixte</label>
+        <label><input type="radio" name="type_logiciels" value="Je ne sais pas">
+          Je ne sais pas</label>
+        <label><input type="radio" name="type_logiciels" value="Aucun">
+          Aucun</label>
+      </div>
+
+      <div class="form-group">
+        <p>Pourquoi choisissez-vous d'utiliser ces outils ?</p>
+        <label><input type="checkbox" name="raisons_usage[]" value="Habitude"> Par habitude</label>
+  <label><input type="checkbox" name="raisons_usage[]" value="Recommandation"> Par recommandation</label>
+  <label><input type="checkbox" name="raisons_usage[]" value="Formation"> J’y ai été formé·e</label>
+  <label><input type="checkbox" name="raisons_usage[]" value="Simplicité"> Pour leur simplicité</label>
+  <label><input type="checkbox" name="raisons_usage[]" value="Popularité"> Pour leur popularité</label>
+  <label><input type="checkbox" name="raisons_usage[]" value="Obligation"> Par obligation professionnelle ou scolaire</label>
+      </div>
+
+      <h2>Connaissance des outils libres</h2>
+
+      <div class="form-group">
+        <p>Avez-vous déjà entendu parler des « logiciels libres » ?</p>
+        <label><input type="radio" name="connaissance_libre" value="Oui" required> Oui</label>
+  <label><input type="radio" name="connaissance_libre" value="Non"> Non</label>
+      </div>
+
+      <div class="form-group">
+        <label>Que signifie pour vous “logiciel libre” ?</label>
+  <input type="text" name="definition_logiciel_libre">
+      </div>
+
+      <div class="form-group">
+        <p>Lesquels de ces outils libres reconnaissez-vous ?</p>
+        <label><input type="checkbox" name="outils_reconnus[]" value="Wikipédia"> Wikipédia</label>
+        <label><input type="checkbox" name="outils_reconnus[]" value="LibreOffice"> LibreOffice</label>
+        <label><input type="checkbox" name="outils_reconnus[]" value="Firefox"> Firefox</label>
+        <label><input type="checkbox" name="outils_reconnus[]" value="Linux"> Linux</label>
+        <label><input type="checkbox" name="outils_reconnus[]" value="Blender"> Blender</label>
+        <label><input type="checkbox" name="outils_reconnus[]" value="GIMP"> GIMP</label>
+        <label><input type="checkbox" name="outils_reconnus[]" value="Framasoft"> Outils Framasoft</label>
+      </div>
+
+      <h2>Votre avis</h2>
+      
+      <p>Sur une échelle de 1 à 5, les logiciels libres vous semblent :</p>
+
+  <div class="scale-group">
+    <p>Fiables</p>
+    <div class="scale">
+      <input type="radio" id="fiable1" name="fiable" value="1"required>
+      <label for="fiable1">1</label>
+      <input type="radio" id="fiable2" name="fiable" value="2">
+      <label for="fiable2">2</label>
+      <input type="radio" id="fiable3" name="fiable" value="3">
+      <label for="fiable3">3</label>
+      <input type="radio" id="fiable4" name="fiable" value="4">
+      <label for="fiable4">4</label>
+      <input type="radio" id="fiable5" name="fiable" value="5">
+      <label for="fiable5">5</label>
+    </div>
+  </div>
+
+  <div class="scale-group">
+    <p>Complexes</p>
+    <div class="scale">
+      <input type="radio" id="complexe1" name="complexe" value="1"required>
+      <label for="complexe1">1</label>
+      <input type="radio" id="complexe2" name="complexe" value="2">
+      <label for="complexe2">2</label>
+      <input type="radio" id="complexe3" name="complexe" value="3">
+      <label for="complexe3">3</label>
+      <input type="radio" id="complexe4" name="complexe" value="4">
+      <label for="complexe4">4</label>
+      <input type="radio" id="complexe5" name="complexe" value="5">
+      <label for="complexe5">5</label>
+    </div>
+  </div>
+
+  <div class="scale-group">
+    <p>Moins professionnels</p>
+    <div class="scale">
+      <input type="radio" id="moinspro1" name="moinspro" value="1"required>
+      <label for="moinspro1">1</label>
+      <input type="radio" id="moinspro2" name="moinspro" value="2">
+      <label for="moinspro2">2</label>
+      <input type="radio" id="moinspro3" name="moinspro" value="3">
+      <label for="moinspro3">3</label>
+      <input type="radio" id="moinspro4" name="moinspro" value="4">
+      <label for="moinspro4">4</label>
+      <input type="radio" id="moinspro5" name="moinspro" value="5">
+      <label for="moinspro5">5</label>
+    </div>
+  </div>
+
+  <div class="scale-group">
+    <p>Plus éthiques</p>
+    <div class="scale">
+      <input type="radio" id="ethique1" name="ethique" value="1"required>
+      <label for="ethique1">1</label>
+      <input type="radio" id="ethique2" name="ethique" value="2">
+      <label for="ethique2">2</label>
+      <input type="radio" id="ethique3" name="ethique" value="3">
+      <label for="ethique3">3</label>
+      <input type="radio" id="ethique4" name="ethique" value="4">
+      <label for="ethique4">4</label>
+      <input type="radio" id="ethique5" name="ethique" value="5">
+      <label for="ethique5">5</label>
+    </div>
+  </div>
+
+  <div class="scale-group">
+    <p>Réservés aux experts</p>
+    <div class="scale">
+      <input type="radio" id="expert1" name="expert" value="1"required>
+      <label for="expert1">1</label>
+      <input type="radio" id="expert2" name="expert" value="2">
+      <label for="expert2">2</label>
+      <input type="radio" id="expert3" name="expert" value="3">
+      <label for="expert3">3</label>
+      <input type="radio" id="expert4" name="expert" value="4">
+      <label for="expert4">4</label>
+      <input type="radio" id="expert5" name="expert" value="5">
+      <label for="expert5">5</label>
+    </div>
+  </div>
+
+
+      <h2>Intention d’usage future</h2>
+
+      <div class="form-group">
+        <p>Seriez-vous plus enclin·e à essayer un logiciel libre s'il était :</p>
+        <label><input type="checkbox" name="conditions_changement[]" value="Esthétiquement attractif">
+          Esthétiquement attractif</label>
+        <label><input type="checkbox" name="conditions_changement[]" value="Plus performant">
+          Plus performant</label>
+        <label><input type="checkbox" name="conditions_changement[]" value="Utilisé par plus de personnes">
+          Utilisé par plus de personnes</label>
+        <label><input type="checkbox" name="conditions_changement[]" value="Plus simple à utiliser">
+          Plus simple à utiliser</label>
+        <label><input type="checkbox" name="conditions_changement[]" value="Refus"> Je ne souhaite pas utiliser d’outils libres</label>
+      </div>
+
+      <div class="form-group">
+  <label>Avez-vous déjà essayé un logiciel libre puis arrêté ? Pourquoi ?</label>
+  <input type="text" name="arret_logiciel_libre">
+</div>
+
+      <h2>Votre rapport aux communs numériques</h2>
+
+      <div class="form-group">
+        <p>Le fait qu’un outil soit collaboratif et ouvert est-il :</p>
+        <label><input type="radio" name="importance_collaboratif" value="Important" required> Important</label>
+  <label><input type="radio" name="importance_collaboratif" value="Secondaire"> Secondaire</label>
+  <label><input type="radio" name="importance_collaboratif" value="Sans importance"> Sans importance</label>
+      </div>
+
+
+      <h2>Communication & visibilité</h2>
+
+
+      <div class="form-group">
+        <p>Avez-vous déjà vu une communication attractive autour des logiciels libres ? (publicité, vidéo, émission, flyer, affiche...)</p>
+        <label><input type="radio" name="communication_vue" value="Oui" required> Oui</label>
+  <label><input type="radio" name="communication_vue" value="Non"> Non</label>
+      </div>
+
+      <div class="form-group">
+     <label>Si oui, qu’est-ce que cette communication mettait en avant ?</label>
+     <input type="text" name="contenu_communication">
+      </div>
+
+      <div class="form-group">
+        <p>Préféreriez-vous un contenu sur les outils libres avec :</p>
+        <label>
+          <input type="checkbox" name="type_de_contenu[]" value="Un ton sérieux et factuel qui va droit au but" required>
+          Un ton sérieux et factuel qui va droit au but
+        </label>
+        <label>
+          <input type="checkbox" name="type_de_contenu[]" value="Un ton humoristique qui explique et divertit">
+          Un ton humoristique qui explique et divertit
+        </label>
+        <label>
+          <input type="checkbox" name="type_de_contenu[]" value="Un ton pédagogique simple, accessible et compréhensible">
+          Un ton pédagogique simple, accessible et compréhensible
+        </label>
+        <label>
+          <input type="checkbox" name="type_de_contenu[]" value="Un format très court (1–3 min)">
+          Un format très court (1–3 min)
+        </label>
+        <label>
+          <input type="checkbox" name="type_de_contenu[]" value="Un format narratif plus long">
+          Un format narratif plus long
+        </label>
+      </div>
+
+      <!-- Question texte -->
+      <div class="form-group">
+        <label for="message">Souhaitez-vous partager une expérience ou votre opinon ?</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+
+      <!-- Champ anti-spam Formspree -->
+      <input type="text" name="_gotcha" class="hidden">
+      <input type="hidden" name="_subject" value="Nouvelle réponse au questionnaire">
+
+      <button type="submit">Envoyer</button>
+
+      <p id="form-status"></p>
+
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("questionnaire-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", async function(event) {
+      event.preventDefault();
+      const data = new FormData(form);
+
+      fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Merci pour votre réponse !";
+          status.classList.add("success");
+          form.reset();
+        } else {
+          status.innerHTML = "Une erreur s'est produite.";
+          status.classList.add("error");
+        }
+      }).catch(error => {
+        status.innerHTML = "Erreur réseau.";
+        status.classList.add("error");
+      });
+    });
+  </script>
+
+</body>
+</html>
