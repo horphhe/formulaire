@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="fr"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulaire</title>
@@ -12,26 +11,24 @@
 
     <h1>Formulaire : Les logiciels libres</h1>
 
-    <p class="subtitle">Partagez votre avis et votre utilisation des logiciels et outils libres ! Ces informations seront utilisées anonymement et uniquement dans le cadre d'projet de diplôme en design graphique sur les communs numériques.
+    <p class="subtitle">Partagez votre avis et votre utilisation des logiciels et outils libres&nbsp;! Ces informations seront utilisées anonymement et uniquement dans le cadre d'projet de diplôme en design graphique sur les communs numériques.
     </p>
 
-    <p class="subtitle">Le logiciel libre constitue une alternative concrète aux outils dits « propriétaires », comme ceux de Google, Microsoft ou Adobe. Le mouvement du libre défend le développement de logiciels respectueux de la neutralité du Net, sans secret industriel, et dont le code source est librement accessible, modifiable et partageable.
+    <p class="subtitle2">Le <span class="highlight">logiciel libre</span> constitue une alternative concrète aux outils dits « propriétaires », comme ceux de Google, Microsoft ou Adobe. Le mouvement du libre défend le développement de logiciels respectueux de la neutralité du Net, sans secret industriel, et dont le code source est librement accessible, modifiable et partageable.
     </p>
 
-    <form id="questionnaire-form" 
-          action="https://formspree.io/f/mnjbeonq" 
-          method="POST">
+    <form id="questionnaire-form" action="https://formspree.io/f/mnjbeonq" method="POST">
 
     <h2>Identité</h2>
 
       <div class="form-group">
-        <label>Âge</label>
-  <input type="text" name="age" required>
+        <p>Âge</p>
+  <input type="text" name="age" required="">
       </div>
 
       <div class="form-group">
         <p>Situation</p>
-        <label><input type="radio" name="situation" value="Étudiant·e" required>
+        <label><input type="radio" name="situation" value="Étudiant·e" required="">
           Étudiant·e</label>
         <label><input type="radio" name="situation" value="Salarié·e">
           Salarié·e</label>
@@ -46,7 +43,7 @@
 
       <div class="form-group">
         <p>Niveau d’aisance avec le numérique :</p>
-        <label><input type="radio" name="aisance_numerique" value="Très à l'aise" required>
+        <label><input type="radio" name="aisance_numerique" value="Très à l'aise" required="">
           Très à l'aise</label>
         <label><input type="radio" name="aisance_numerique" value="Plutôt à l’aise">
           Plutôt à l’aise</label>
@@ -60,14 +57,14 @@
       <h2>Usages</h2>
       
       <div class="form-group">
-        <label>Quels logiciels utilisez-vous régulièrement ?</label>
+        <p>Quels logiciels utilisez-vous régulièrement&nbsp;?</p>
   <input type="text" name="logiciels_utilises">
       </div>
       
 
       <div class="form-group">
-        <p>Vous utilisez majoritairement des logiciels :</p>
-        <label><input type="radio" name="type_logiciels" value="Propriétaires" required>
+        <p>Vous utilisez majoritairement des logiciels&nbsp;:</p>
+        <label><input type="radio" name="type_logiciels" value="Propriétaires" required="">
           Propriétaires</label>
         <label><input type="radio" name="type_logiciels" value="Libres ou open source">
           Libres</label>
@@ -80,7 +77,7 @@
       </div>
 
       <div class="form-group">
-        <p>Pourquoi choisissez-vous d'utiliser ces outils ?</p>
+        <p>Pourquoi choisissez-vous d'utiliser ces outils&nbsp;?</p>
         <label><input type="checkbox" name="raisons_usage[]" value="Habitude"> Par habitude</label>
   <label><input type="checkbox" name="raisons_usage[]" value="Recommandation"> Par recommandation</label>
   <label><input type="checkbox" name="raisons_usage[]" value="Formation"> J’y ai été formé·e</label>
@@ -92,18 +89,18 @@
       <h2>Connaissance des outils libres</h2>
 
       <div class="form-group">
-        <p>Avez-vous déjà entendu parler des « logiciels libres » ?</p>
-        <label><input type="radio" name="connaissance_libre" value="Oui" required> Oui</label>
+        <p>Avez-vous déjà entendu parler des «&nbsp;logiciels libres&nbsp;»&nbsp;?</p>
+        <label><input type="radio" name="connaissance_libre" value="Oui" required=""> Oui</label>
   <label><input type="radio" name="connaissance_libre" value="Non"> Non</label>
       </div>
 
       <div class="form-group">
-        <label>Que signifie pour vous “logiciel libre” ?</label>
+        <p>Que signifie pour vous “logiciel libre”&nbsp;?</p>
   <input type="text" name="definition_logiciel_libre">
       </div>
 
       <div class="form-group">
-        <p>Lesquels de ces outils libres reconnaissez-vous ?</p>
+        <p>Lesquels de ces outils libres reconnaissez-vous&nbsp;?</p>
         <label><input type="checkbox" name="outils_reconnus[]" value="Wikipédia"> Wikipédia</label>
         <label><input type="checkbox" name="outils_reconnus[]" value="LibreOffice"> LibreOffice</label>
         <label><input type="checkbox" name="outils_reconnus[]" value="Firefox"> Firefox</label>
@@ -120,7 +117,7 @@
   <div class="scale-group">
     <p>Fiables</p>
     <div class="scale">
-      <input type="radio" id="fiable1" name="fiable" value="1"required>
+      <input type="radio" id="fiable1" name="fiable" value="1" required="">
       <label for="fiable1">1</label>
       <input type="radio" id="fiable2" name="fiable" value="2">
       <label for="fiable2">2</label>
@@ -136,7 +133,7 @@
   <div class="scale-group">
     <p>Complexes</p>
     <div class="scale">
-      <input type="radio" id="complexe1" name="complexe" value="1"required>
+      <input type="radio" id="complexe1" name="complexe" value="1" required="">
       <label for="complexe1">1</label>
       <input type="radio" id="complexe2" name="complexe" value="2">
       <label for="complexe2">2</label>
@@ -152,7 +149,7 @@
   <div class="scale-group">
     <p>Moins professionnels</p>
     <div class="scale">
-      <input type="radio" id="moinspro1" name="moinspro" value="1"required>
+      <input type="radio" id="moinspro1" name="moinspro" value="1" required="">
       <label for="moinspro1">1</label>
       <input type="radio" id="moinspro2" name="moinspro" value="2">
       <label for="moinspro2">2</label>
@@ -168,7 +165,7 @@
   <div class="scale-group">
     <p>Plus éthiques</p>
     <div class="scale">
-      <input type="radio" id="ethique1" name="ethique" value="1"required>
+      <input type="radio" id="ethique1" name="ethique" value="1" required="">
       <label for="ethique1">1</label>
       <input type="radio" id="ethique2" name="ethique" value="2">
       <label for="ethique2">2</label>
@@ -184,7 +181,7 @@
   <div class="scale-group">
     <p>Réservés aux experts</p>
     <div class="scale">
-      <input type="radio" id="expert1" name="expert" value="1"required>
+      <input type="radio" id="expert1" name="expert" value="1" required="">
       <label for="expert1">1</label>
       <input type="radio" id="expert2" name="expert" value="2">
       <label for="expert2">2</label>
@@ -214,7 +211,7 @@
       </div>
 
       <div class="form-group">
-  <label>Avez-vous déjà essayé un logiciel libre puis arrêté ? Pourquoi ?</label>
+  <p>Avez-vous déjà essayé un logiciel libre puis arrêté&nbsp;? Pourquoi&nbsp;?</p>
   <input type="text" name="arret_logiciel_libre">
 </div>
 
@@ -222,30 +219,30 @@
 
       <div class="form-group">
         <p>Le fait qu’un outil soit collaboratif et ouvert est-il :</p>
-        <label><input type="radio" name="importance_collaboratif" value="Important" required> Important</label>
+        <label><input type="radio" name="importance_collaboratif" value="Important" required=""> Important</label>
   <label><input type="radio" name="importance_collaboratif" value="Secondaire"> Secondaire</label>
   <label><input type="radio" name="importance_collaboratif" value="Sans importance"> Sans importance</label>
       </div>
 
 
-      <h2>Communication & visibilité</h2>
+      <h2>Communication &amp; visibilité</h2>
 
 
       <div class="form-group">
-        <p>Avez-vous déjà vu une communication attractive autour des logiciels libres ? (publicité, vidéo, émission, flyer, affiche...)</p>
-        <label><input type="radio" name="communication_vue" value="Oui" required> Oui</label>
+        <p>Avez-vous déjà vu une communication attractive autour des logiciels libres&nbsp;? (publicité, vidéo, émission, flyer, affiche...)</p>
+        <label><input type="radio" name="communication_vue" value="Oui" required=""> Oui</label>
   <label><input type="radio" name="communication_vue" value="Non"> Non</label>
       </div>
 
       <div class="form-group">
-     <label>Si oui, qu’est-ce que cette communication mettait en avant ?</label>
+     <p>Si oui, qu’est-ce que cette communication mettait en avant&nbsp;?</p>
      <input type="text" name="contenu_communication">
       </div>
 
       <div class="form-group">
         <p>Préféreriez-vous un contenu sur les outils libres avec :</p>
         <label>
-          <input type="checkbox" name="type_de_contenu[]" value="Un ton sérieux et factuel qui va droit au but" required>
+          <input type="checkbox" name="type_de_contenu[]" value="Un ton sérieux et factuel qui va droit au but" required="">
           Un ton sérieux et factuel qui va droit au but
         </label>
         <label>
@@ -266,13 +263,13 @@
         </label>
       </div>
 
-      <!-- Question texte -->
+      
       <div class="form-group">
-        <label for="message">Souhaitez-vous partager une expérience ou votre opinon ?</label>
+        <p for="message">Souhaitez-vous partager une expérience ou votre opinon&nbsp;?</p>
         <textarea id="message" name="message" rows="4"></textarea>
       </div>
 
-      <!-- Champ anti-spam Formspree -->
+      
       <input type="text" name="_gotcha" class="hidden">
       <input type="hidden" name="_subject" value="Nouvelle réponse au questionnaire">
 
@@ -313,5 +310,5 @@
     });
   </script>
 
-</body>
-</html>
+
+</body></html>
