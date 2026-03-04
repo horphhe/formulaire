@@ -13,6 +13,26 @@
     font-style: normal;
 }
 
+.mail-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.mail-icon img {
+  width: 80px;
+  height: auto;
+  display: block;
+}
+
+.mail-icon img {
+  width: 80px;
+  transition: transform 0.2s ease;
+}
+
+.mail-icon:hover img {
+  transform: scale(1.1);
+}
 
 body {
   background-color: #f5f5f5;
@@ -29,6 +49,7 @@ body {
   width: 100%;
   max-width: 600px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  position: relative;
 }
 
 h1 {
@@ -56,6 +77,36 @@ p {
   text-decoration-thickness: 2px;
 }
 
+.sticker-duree {
+  position: absolute;
+  right: -40px;
+  top: 260px;
+
+  background: blue;
+  color: white;
+  font-family: 'Heal The Web A', sans-serif;
+  font-size: 14px;
+
+  padding: 14px 24px;
+  border-radius: 999px;
+
+  transform: rotate(8deg);
+
+  animation: zoomInOut 2s ease-in-out infinite;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Animation zoom */
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: rotate(8deg) scale(1);
+  }
+  50% {
+    transform: rotate(8deg) scale(1.08);
+  }
+}
+
 .scale-group {
   margin-bottom: 20px;
 }
@@ -71,7 +122,7 @@ p {
 }
 
 .scale input {
-  display: none; /* masque le bouton radio classique */
+  display: none;
 }
 
 .scale label {
@@ -160,7 +211,7 @@ button:hover {
   html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* supprime le scroll horizontal */
+    overflow-x: hidden;
   }
 
   #questionnaire-form {
@@ -169,9 +220,43 @@ button:hover {
     box-sizing: border-box;
     padding: 20px;
   }
-
+  
+  h2 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: 'Heal The Web A', sans-serif;
+  color: blue;
+  }
+  
+  .sticker-duree {
+  position: static;
+  background: none;
+  color: blue;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  transform: none;
+  animation: none;
+  font-size: 16px;
+  margin: 22px 0 0 0;
+  }
+ 
+  
   .form-group {
     width: 100%;
+  }
+
+   .mail-icon {
+    position: static;
+    display: block;
+    margin: 20px auto 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .mail-icon img {
+    width: 60px;
+    margin: auto
   }
 
   input[type="text"] {
@@ -179,7 +264,6 @@ button:hover {
     box-sizing: border-box;
   }
 
-  /* Échelles 1–5 */
   .scale {
     display: flex;
     justify-content: space-between;
@@ -192,7 +276,6 @@ button:hover {
     padding: 10px 0;
   }
 
-  /* Radios et checkboxes plus grands pour mobile */
   input[type="radio"],
   input[type="checkbox"] {
     transform: scale(1.2);
