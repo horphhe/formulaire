@@ -5,6 +5,15 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+    font-family: 'Heal The Web A';
+    src: url('fonts/HealTheWebA-Regular.woff2') format('woff2'),
+         url('fonts/HealTheWebA-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
   background-color: #f5f5f5;
   display: flex;
@@ -15,22 +24,36 @@ body {
 .container {
   background: white;
   padding: 30px;
-  border-radius: 8px;
+  border-style: solid;
+  border-color: blue;
   width: 100%;
   max-width: 600px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
 h1 {
-  margin-bottom: 10px;
+  margin-bottom: 17px;
+  font-family: 'Heal The Web A', sans-serif;
+  color: blue;
 }
 
 h2 {
+  margin-top: 30px;
   margin-bottom: 10px;
+  font-family: 'Heal The Web A', sans-serif;
+  color: blue;
 }
 
 p {
-  margin-bottom: 7px;
+  margin-bottom: 9px;
+  font-size:16px;
+}
+
+.highlight {
+  color:blue;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
 }
 
 .scale-group {
@@ -38,7 +61,7 @@ p {
 }
 
 .scale-group p {
-  margin: 0 0 8px 0;
+  margin-bottom: 8px;
   font-weight: bold;
 }
 
@@ -65,13 +88,13 @@ p {
 }
 
 .scale input:checked + label {
-  background-color: #333;
+  background-color: blue;
   color: #fff;
-  border-color: #333;
+  border-color: blue;
 }
 
 .subtitle {
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   color: #666;
 }
 
@@ -82,7 +105,8 @@ p {
 label {
   display: block;
   margin-bottom: 6px;
-  font-size: 14px;
+  font-size: 16px;
+  color: #666;
 }
 
 input[type="text"],
@@ -103,7 +127,7 @@ button {
   width: 100%;
   padding: 12px;
   border: none;
-  background-color: black;
+  background-color: blue;
   color: white;
   cursor: pointer;
   border-radius: 4px;
@@ -111,7 +135,7 @@ button {
 }
 
 button:hover {
-  background-color: #333;
+  background-color: #4F4FFF;
 }
 
 #form-status {
