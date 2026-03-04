@@ -130,3 +130,49 @@ button:hover {
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* supprime le scroll horizontal */
+  }
+
+  #questionnaire-form {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Échelles 1–5 */
+  .scale {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .scale label {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Radios et checkboxes plus grands pour mobile */
+  input[type="radio"],
+  input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 6px;
+  }
+
+}
