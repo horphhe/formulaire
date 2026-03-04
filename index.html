@@ -16,7 +16,9 @@
 
     <p class="subtitle2">Le <span class="highlight">logiciel libre</span> constitue une alternative concrète aux outils dits « propriétaires », comme ceux de Google, Microsoft ou Adobe. Le mouvement du libre défend le développement de logiciels respectueux de la neutralité du Net, sans secret industriel, et dont le code source est librement accessible, modifiable et partageable.
     </p>
-
+<div class="sticker-duree">
+  Durée : 5min
+</div>
     <form id="questionnaire-form" action="https://formspree.io/f/mnjbeonq" method="POST">
 
     <h2>Identité</h2>
@@ -86,7 +88,7 @@
   <label><input type="checkbox" name="raisons_usage[]" value="Obligation"> Par obligation professionnelle ou scolaire</label>
       </div>
 
-      <h2>Connaissance des outils libres</h2>
+      <h2>Familiarité avec les outils libres</h2>
 
       <div class="form-group">
         <p>Avez-vous déjà entendu parler des «&nbsp;logiciels libres&nbsp;»&nbsp;?</p>
@@ -110,7 +112,7 @@
         <label><input type="checkbox" name="outils_reconnus[]" value="Framasoft"> Outils Framasoft</label>
       </div>
 
-      <h2>Votre avis</h2>
+      <h2>Avis</h2>
       
       <p>Sur une échelle de 1 à 5, les logiciels libres vous semblent :</p>
 
@@ -194,6 +196,13 @@
     </div>
   </div>
 
+  <div class="form-group">
+        <p>Le fait qu’un outil soit collaboratif et ouvert est-il :</p>
+        <label><input type="radio" name="importance_collaboratif" value="Important" required=""> Important</label>
+  <label><input type="radio" name="importance_collaboratif" value="Secondaire"> Secondaire</label>
+  <label><input type="radio" name="importance_collaboratif" value="Sans importance"> Sans importance</label>
+      </div>
+
 
       <h2>Intention d’usage future</h2>
 
@@ -214,15 +223,6 @@
   <p>Avez-vous déjà essayé un logiciel libre puis arrêté&nbsp;? Pourquoi&nbsp;?</p>
   <input type="text" name="arret_logiciel_libre">
 </div>
-
-      <h2>Votre rapport aux communs numériques</h2>
-
-      <div class="form-group">
-        <p>Le fait qu’un outil soit collaboratif et ouvert est-il :</p>
-        <label><input type="radio" name="importance_collaboratif" value="Important" required=""> Important</label>
-  <label><input type="radio" name="importance_collaboratif" value="Secondaire"> Secondaire</label>
-  <label><input type="radio" name="importance_collaboratif" value="Sans importance"> Sans importance</label>
-      </div>
 
 
       <h2>Communication &amp; visibilité</h2>
@@ -278,6 +278,9 @@
       <p id="form-status"></p>
 
     </form>
+    <a href="mailto:pellerin.amelia@icloud.com" class="mail-icon">
+    <img src="img/icon-mail.png" alt="Contact">
+</a>
   </div>
 
   <script>
